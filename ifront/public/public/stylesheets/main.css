@@ -201,7 +201,7 @@ video {
     background-size: 60%;
     transition: 0.2s;
     /* box-shadow: ; */
-    /* font-size: 0; */
+    font-size: 0;
 }
 
 .filters-large {
@@ -235,10 +235,38 @@ video {
 #allMeat {
     background-image: url("../images/allMeat.svg");
 }
+#allAnimals {
+    background-image: url("../images/allAnimals.svg");
+}
+#beef {
+    background-image: url("../images/beef.svg");
+}
+#chicken {
+    background-image: url("../images/chicken.svg");
+}
+#pork {
+    background-image: url("../images/pork.svg");
+}
 
 #seafood {
     background-image: url("../images/fish-light.svg");
 }
+#clam {
+    background-image: url("../images/clam.svg");
+}
+#fishEgg {
+    background-image: url("../images/fishEgg.svg");
+}
+#mackerel {
+    background-image: url("../images/mackerel.svg");
+}
+#shrimp {
+    background-image: url("../images/shrimp.svg");
+}
+#crab {
+    background-image: url("../images/crab.svg");
+}
+
 #corn {
     background-image: url("../images/wheat-light.svg")
 }
@@ -251,15 +279,30 @@ video {
 #almond {
     background-image: url("../images/almond.svg");
 }
+#wheat {
+    background-image: url("../images/wheat.svg");
+}
+#walnut {
+    background-image: url("../images/walnut.svg");
+}
 
 #animalNature {
     background-image: url("../images/cow-light.svg")
 }
-#cheese {
+#milk {
     background-image: url("../images/milk.svg")
 }
 #cream {
     background-image: url("../images/cream.svg");
+}
+#butter {
+    background-image: url("../images/butter.svg");
+}
+#cheese {
+    background-image: url("../images/cheese.svg");
+}
+#oil {
+    background-image: url("../images/oil.svg");
 }
 
 #plants {
@@ -282,7 +325,7 @@ video {
 }
 
 #eggs {
-    background-image: url("../images/adjust-light.svg");
+    background-image: url("../images/allEgg.svg");
 }
 #allEgg {
     background-image: url("../images/allEgg.svg")

@@ -27,11 +27,12 @@ onload = function() {
         var videoTracks;
         var constraints = {
             audio: false,
-            video: {
-                width: { min: 1024, ideal: 1280, max: 1920 },
-                height: { min: 776, ideal: 720, max: 1080 },
-                facingMode: { exact: "environment" },
-            }
+            video: true
+            // video: {
+            //     width: { min: 1024, ideal: 1280, max: 1920 },
+            //     height: { min: 776, ideal: 720, max: 1080 },
+            //     facingMode: { exact: "environment" },
+            // }
         };
         var promise = navigator.mediaDevices.getUserMedia(constraints);
         promise.then(function(stream) {
@@ -46,6 +47,7 @@ onload = function() {
             console.log(err.name + ": " + err.message);
         });
 
+        
         // 캡쳐하고 캔버스에 보여줌
         var snapshotCanvas = document.querySelector('#snapshot');
         var captureButton = document.querySelector('#capture');
@@ -58,7 +60,7 @@ onload = function() {
             // document.querySelector('#inp_img').value = context.getImageData(0, 0, snapshotCanvas.width, snapshotCanvas.height);
             (document.querySelector("#snapshot-cover")).classList.remove("display-none");
 
-            document.querySelector('#inp_img').value = snapshotCanvas.toDataURL("image/png");
+            // document.querySelector('#inp_img').value = snapshotCanvas.toDataURL("image/png");
         });
     })
 
@@ -184,12 +186,6 @@ onload = function() {
             }
         }
     }
-
-
-
-    (document.querySelector("#test")).addEventListener("click", function () {
-        alert(selectedFilters);
-    })
 
 
 

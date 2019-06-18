@@ -17,6 +17,3 @@ def path_and_rename(instance, filename):
 class ImageResult(models.Model):
     Image = models.ImageField(blank=True, upload_to=path_and_rename)
     OCRData = models.TextField()
-
-class TextResult(models.Model):
-    base64 = models.TextField()
